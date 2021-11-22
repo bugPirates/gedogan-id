@@ -17,7 +17,12 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/gedogan'
-import { IoLogoFacebook, IoLogoInstagram, IoLogoYoutube } from 'react-icons/io5'
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoYoutube,
+  IoLogoWhatsapp
+} from 'react-icons/io5'
 const Page = () => {
   return (
     <Layout title="Home">
@@ -35,9 +40,9 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Gedogan Re:Born Team
+              Gedogan Team
             </Heading>
-            <p>Tenun Sesek Legacy</p>
+            <p>Pringgasela weaving going world wide</p>
           </Box>
           <Box
             flexShrink={0}
@@ -46,13 +51,11 @@ const Page = () => {
             textAlign="center"
           >
             <Image
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
               borderStyle="solid"
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/gedogan.jpeg"
+              src="/images/gedoganart.png"
               alt="Profile image"
             />
           </Box>
@@ -80,7 +83,7 @@ const Page = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Gedogan Bio
+            Gedogan Team
           </Heading>
           <BioSection>
             <BioYear>2021</BioYear>
@@ -130,6 +133,17 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoYoutube} />}
+                >
+                  Gedogan-id
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://youtube.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoWhatsapp} />}
                 >
                   Gedogan-id
                 </Button>
