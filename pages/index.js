@@ -5,7 +5,6 @@ import {
   Heading,
   Button,
   Image,
-  SimpleGrid,
   List,
   ListItem,
   Link,
@@ -18,7 +17,6 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/gedogan'
-import { GridItem } from '../components/grid-item'
 import { IoLogoFacebook, IoLogoInstagram, IoLogoYoutube } from 'react-icons/io5'
 const Page = () => {
   return (

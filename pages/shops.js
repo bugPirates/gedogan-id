@@ -8,8 +8,7 @@ import {
   ListItem,
   Link,
   Box,
-  Icon,
-  useColorModeValue
+  Icon
 } from '@chakra-ui/react'
 import Footer from '../components/footer'
 import { IoLogoCart } from 'react-icons/io5'

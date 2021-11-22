@@ -1,6 +1,5 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, TenunImage, Meta } from '../../components/tenun'
+import { Container } from '@chakra-ui/react'
+import { Title, TenunImage } from '../../components/tenun'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
