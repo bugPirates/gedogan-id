@@ -1,11 +1,13 @@
 {
   "name": "gedogan-id",
   "version": "1.0.0",
-  "description": "gedogan-reborn landing page",
+  "description": "gedogan landing page",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "prettier -write .",
+    "build": "next build",
+    "start": "next start",
+    "prettier": "prettier -write .",
     "lint": "next lint"
   },
   "author": "shiroe<hi@bandit.service>",
