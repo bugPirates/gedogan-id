@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react'
+import { Container, List } from '@chakra-ui/react'
 import { Title, TenunImage } from '../../components/tenun'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
