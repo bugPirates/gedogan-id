@@ -24,7 +24,10 @@ const Shops = () => {
             </Heading>
             <List>
               <ListItem>
-                <Link href="https://facebook.com" target="_blank">
+                <Link
+                  href="https://shopee.co.id/shop/590403337"
+                  target="_blank"
+                >
                   <Button
                     variant="ghost"
                     colorScheme="teal"
