@@ -11,7 +11,7 @@ const Produks = () => {
     <Layout title="Produk">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Produk Tenun
+          Produk
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>

@@ -5,13 +5,16 @@ import Layout from '../../components/layouts/article'
 
 const Tenun = () => {
   return (
-    <Layout title="gedogan0">
+    <Layout title="ragi-osap">
       <Container>
-        <Title>Ragi 0</Title>
+        <Title>Ragi Osap</Title>
         <P>Reragian adalah bla bla bla bla</P>
         <List ml={4} my={4}></List>
 
-        <TenunImage src="/images/gedogan.jpeg" alt="gedogan0"></TenunImage>
+        <TenunImage
+          src="/images/tenun/ragi-osap.jpg"
+          alt="ragi-osap"
+        ></TenunImage>
       </Container>
     </Layout>
   )

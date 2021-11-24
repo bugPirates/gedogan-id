@@ -17,15 +17,15 @@ const Shops = () => {
   return (
     <Layout title="Shop">
       <Container>
-        <Box align="center">
+        <Box align="start">
           <Section delay={0.3}>
             <Heading as="h3" variant="section-title" alignItems="center">
               Shop
             </Heading>
-            <List>
+            <List align="center">
               <ListItem>
                 <Link
-                  href="https://shopee.co.id/shop/590403337"
+                  href="https://shopee.co.id/shop/590403337 "
                   target="_blank"
                 >
                   <Button
