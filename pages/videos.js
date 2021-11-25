@@ -14,7 +14,7 @@ const Videos = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=mqdXUVOcAJE&t=82s"
+              url="https://www.youtube.com/watch?v=oS0N84kxFbM"
               playIcon={<div>Icon</div>}
             />
           </Section>
