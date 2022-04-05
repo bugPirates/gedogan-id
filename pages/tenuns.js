@@ -24,7 +24,7 @@ const Tenuns = () => {
               title="Ragi Osap"
               thumbnail={thumbRagiOsap}
             >
-              tenun tenun tenun
+              
             </TenunGridItem>
           </Section>
         </SimpleGrid>
@@ -35,28 +35,28 @@ const Tenuns = () => {
               title="Ragi Sabuk Beranak"
               thumbnail={thumbSabukBeranak}
             >
-              asdsasadj aslkdj salkds sakld alsk
+              
             </TenunGridItem>
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <TenunGridItem id="ragi2" title="Ragi Dulang Berandangan" thumbnail={thumbRagiDulang}>
-              asdsasadj aslkdj salkds sakld alsk
+              
             </TenunGridItem>
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <TenunGridItem id="ragi3" title="Ragi Kemalo" thumbnail={thumbRagiKemalo}>
-              asdsasadj aslkdj salkds sakld alsk
+             
             </TenunGridItem>
           </Section>
         </SimpleGrid>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <TenunGridItem id="ragi4" title="Ragi Anteng" thumbnail={thumbRagiAnteng}>
-              asdsasadj aslkdj salkds sakld alsk
+              
             </TenunGridItem>
           </Section>
         </SimpleGrid>
