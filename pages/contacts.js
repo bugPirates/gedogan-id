@@ -14,7 +14,7 @@ import {
 export default function HookForm() {
   const {
     handleSubmit,
-    formState: { errors, isSubmitting }
+    formState: { isSubmitting }
   } = useForm();
 
   function onSubmit(values) {
