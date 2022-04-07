@@ -1,17 +1,19 @@
 import { useForm } from "react-hook-form";
+import Layout from '../components/layouts/article'
 import React from "react";
+import Footer from '../components/footer';
 import {
-  FormErrorMessage,
   FormLabel,
   FormControl,
   Input,
-  Button
+  Button,
+  Textarea,
+  Container
 } from "@chakra-ui/react";
 
 export default function HookForm() {
   const {
     handleSubmit,
-    register,
     formState: { errors, isSubmitting }
   } = useForm();
 
@@ -25,50 +27,37 @@ export default function HookForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <FormControl isInvalid={errors.name}>
-        <FormLabel htmlFor="name">Nama</FormLabel>
-        <Input
-          id="name"
-          placeholder="nama"
-          {...register("name", {
-            required: "This is required",
-            minLength: { value: 20, message: "Minimum length should be 4" }
-          })}
-        />
-        <FormErrorMessage>
-          {errors.name && errors.name.message}
-        </FormErrorMessage>
-      </FormControl>
-      <FormControl isInvalid={errors.name}>
-        <FormLabel htmlFor="name">E-mail</FormLabel>
-        <Input
-          id="email"
-          placeholder="bandit.exemple@network.id  "
-          {...register("email", {
-            required: "This is required"
-          })}
-        />
-        <FormErrorMessage>
-          {errors.name && errors.name.message}
-        </FormErrorMessage>
-      </FormControl>
-      <FormControl isInvalid={errors.name}>
-        <FormLabel htmlFor="name">Tujuan</FormLabel>
-        <Input
-          id="tujuan"
-          placeholder="ujuan"
-          {...register("tujuan", {
-            required: "This is required"
-          })}
-        />
-        <FormErrorMessage>
-          {errors.name && errors.name.message}
-        </FormErrorMessage>
-      </FormControl>  
-      <Button mt={4} colorScheme="teal" isLoading={isSubmitting} type="submit">
-        Submit
-      </Button>
-    </form>
+    <Layout title="Contact">
+      <Container>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <FormControl >
+          <FormLabel htmlFor="name">Nama</FormLabel>
+          <Input
+            type={'text'}
+            name={'nama'}
+            className={styles.inputField}
+            placeholder="nama"
+          />
+        </FormControl>
+        <FormControl >
+          <FormLabel htmlFor="name">E-mail</FormLabel>
+          <Input
+            id="email"
+            placeholder="shiroe.tech@network.id"
+          />
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="name">Pesan</FormLabel>
+          <Textarea 
+          id="pesan"
+          placeholder='Pesan' />
+        </FormControl>  
+        <Button mt={4} colorScheme="teal" isLoading={isSubmitting} type="submit">
+          Submit
+        </Button>
+      </form>
+    </Container>
+    <Footer />
+    </Layout>
   );
 }
