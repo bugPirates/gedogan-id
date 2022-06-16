@@ -139,7 +139,7 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://wa.me/081282490150" target="_blank">
+              <Link href="https://wa.me/085339357795" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
